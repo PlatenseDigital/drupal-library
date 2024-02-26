@@ -1,0 +1,10 @@
+#!/usr/bin/env php
+<?php
+require_once __DIR__ . '/../autoload.php';
+use Symfony\Component\Console\Application;
+use Console\App\Commands\AddLibrary;
+use Console\App\Commands\UpdateLibrary;
+$app = new Application();
+$app->add(new AddLibrary());
+$app->add(new UpdateLibrary());
+$app->run();
