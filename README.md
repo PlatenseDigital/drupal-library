@@ -19,7 +19,9 @@ And done!
 
 ## Using it
 You can run
+
 **php vendor/bin/drupal-library add -f "folderName" --has "css"/"js"/"_both_" -l "base"/"layout"/"_component_"/"state"/"theme" Theme-name library-name**
+
 to create a new library. 
 With the parameter has (-has) you can select if your library has CSS or JS. If you do not specify a "has" value, the default behavior is to have both.
 With the parameter folder (-f) you can select the folder where your files will be created, the default value is components. You can also add subdirectories and these will be created if they do not exist. Such as "components/buttons"
@@ -27,7 +29,9 @@ With the parameter level (-l) you can select the weight of your library, the def
 
 The default version is "VERSION" if you are not on a server with reverse proxy this will probably keep your libraries up to date.
 But in the other case you can use
+
 **php vendor/bin/drupal-library update Theme-name library-name**
+
 to update the version of your library.
   
  
