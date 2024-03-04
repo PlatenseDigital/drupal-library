@@ -26,7 +26,7 @@ class AddLibrary extends Command
             return 0;
         }
 
-        if (!in_array($input->getOption('level'), ["base","layout","_component_","state","theme"])) {
+        if (!in_array($input->getOption('level'), ["base","layout","component","state","theme"])) {
             $output->writeln('The level option only can have the values: base, layout, component, state or theme');
             return 0;
         }
