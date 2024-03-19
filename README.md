@@ -15,6 +15,8 @@ This task takes time and there is a possibility of accidents, such as two people
 	    "classmap": ["vendor/drupallibrary"]
     },
 
+3. run the next command in your console: composer dump-autoload -o
+
 And done!
 
 ## Using it
